@@ -15,21 +15,75 @@ html{
 
 body{
     font-family: "GenshinImpact";
-    background-color: rgb(177, 177, 177);
+    background-color: #16161d;
 }
 
-header::before{
-    margin-bottom: 40px;
+
+.contenedor{
+    margin-top: 110px;
+}
+
+.div-inicio{
+    height: 33px;
+    width: 33px;
 }
 
 nav{
     justify-content: center;
     align-items: center;
-    background-color: rgb(104, 104, 104);
-    position: sticky;
+    background-color: #16161d;
+    position: fixed;
     top: 0;
     width: 100%;
-    z-index: 100;
+    z-index: 100; 
+}
+
+.busca-nav{
+    top: 0;
+    height: 50px;
+    width: 100%;
+    padding: 5px;
+}
+
+.img-nav{
+    cursor: pointer;
+    height: 30px;
+    width: 30px;
+}
+
+.input-nav{
+    font-family: "GenshinImpact";
+    height: 30px;
+    width: 600px;
+    border: 1px solid white;
+    border-radius: 10px 0 0 10px;
+    font-size: 15px;
+    padding: 10px;
+    outline: none;
+}
+
+.nav-search{
+    display: flex;
+    flex-direction: row;
+    margin-top: 7px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.Name-nav{
+    color: white;
+}
+
+.nav-all{
+    margin-left: 7%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border: 2px solid white;
+    border-radius: 15px;
 }
 
 .contenedor-nav{
@@ -47,33 +101,221 @@ nav{
     text-decoration: none;
     color: white;
     border-radius: 15px;
+    padding: 7px 15px;
 }
 
+
 .contenedor-nav > a:hover{
-    color: black;
-    transition:all ease-in-out .7s;
+    transition:all ease-in-out .3s;
+    background-color: #3f3f42;
 }
 
 .Inicio{
+    display: flex;
+    flex-direction: row;
     width: 100%;
-    height: 230px;
-    background: rgb(144, 231, 202);
-    padding: 2%;
+    height: 600px;
+    background: rgb(59,59,140);
+    background: linear-gradient(90deg, rgba(59,59,140,1) 0%, rgba(0,213,255,1) 100%);
+    padding: 5%;
+    max-width: 100%;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.presentacion{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.text-presentacion{
+    font-size: 35px;
+    text-transform: uppercase;
+}
+
+.presentacion i{
+    font-size: 35px;
+}
+
+.Descripcion{
+    width: 100%;
+    height: 165px;
+    background: rgb(99,38,201);
+    background: linear-gradient(90deg, rgba(99,38,201,1) 15%, rgba(13,13,207,1) 85%);
+    padding: 5%;
+    max-width: 100%;
+}
+
+#Inicio {
+    padding-top: 110px;
+    margin-top: -110px;
+}
+
+
+.Redes{
+    width: 100%;
+    height: 165px;
+    background: rgb(99,38,201);
+    background: linear-gradient(90deg, rgba(99,38,201,1) 15%, rgba(13,13,207,1) 85%);
+    padding: 5%;
+    max-width: 100%;
 }
 
 .div-inicio{
     display: flex;
-    justify-content: center;
+    flex-direction: row;
+    justify-content: space-around;
     align-items: center;
-    gap: 5%;
+    margin: auto;
+    width: 100%;
+    gap: 2%;
+}
+
+
+
+p{
+    font-size: 13px;
+}
+
+.inicio-divs{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    border: 3px solid #16161d;
+    border-radius: 15px;
+    padding: 2%;
+    width: 120px;
+    height: 100px;
+    text-align: center;
+    gap: 2px;
+}
+
+.Red-enlaces{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    border: 3px solid #16161d;
+    border-radius: 15px;
+    padding: 2%;
+    width: 120px;
+    height: 100px;
+    text-align: center;
+    gap: 2px;
+    cursor: pointer;
+}
+
+.Red-enlaces:hover{
+    color: white;
+    background: #16161d;
+    transition: all ease-in-out .4s;
+}
+
+.Red-enlaces i{
+    font-size: 25px;
+}
+
+.Red-enlaces{
+    color: black;
+    text-decoration: none;
+}
+
+.inicio-a{
+    text-decoration: none;
+    color: white;
+}
+
+.inicio-divs > i{
+    font-size: 25px;
+}
+
+.inicio-divs:hover{
+    color: white;
+    background: #16161d;
+    transition: all ease-in-out .4s;
+}
+
+.inicio-divs > .img-inicio:hover{
+    filter: brightness(100);
+}
+
+.divs-decorativos{
+    display: flex;
+    flex-direction: row;
+    gap: 60px;
+    align-items: center;
+    justify-content: space-around;
+    max-width: 100%;
 }
 
 .text-inicio{
-    width: 80%;
+    width: 40%;
     text-align:left;
+    max-width: 100%;
+
 }
 
 .img-inicio{
-    width: 170px;
-    height: 170px;
+    width: 33px;
+    height: 33px;
+}
+
+.texto-copyright{
+    font-size: 12px;
+    width: 100%;
+    max-width: 100%;
+    height: 15px;
+    color: rgb(157, 157, 157);
+}
+
+.registro-container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 165px;
+    background-color: #3f3f42;
+    align-items: center;
+    justify-content: center;
+}
+
+.registro-div{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.registro-all{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.red-social{
+    display: flex;
+    flex-direction: column;
+    color: aliceblue;
+    background-color: #3f3f42;
+    border: 1px solid white;
+    border-radius: 15px;
+    width: 80px;
+    height: 80px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+footer{
+    padding: 10px;
+    padding-bottom: 20px;
 }
