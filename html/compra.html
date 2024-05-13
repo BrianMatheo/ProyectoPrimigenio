@@ -8,6 +8,15 @@
     <title>ICY</title>
 </head>
 <body>
+    <script>
+    window.onload = function() {
+        var producto = JSON.parse(localStorage.getItem('producto'));
+        document.getElementById('imagen-producto').src = producto.imagen;
+        document.getElementById('nombre-producto').textContent = producto.nombre;
+        document.getElementById('precio-producto').textContent = producto.precio;
+        document.getElementById('descuento-producto').textContent = producto.descuento;
+    };
+    </script>
     <header class="contenedor">
             <nav>
                 <section class="busca-nav">
@@ -36,47 +45,18 @@
             </nav>
     </header>
     <section class="Inicio" id="Inicio">
-        <div class="contenedor-Divsropa">
-            <a href="compra.html" id="link-ropa">
-            <div class="contenedor-ropa" class="imagen-enlace">
-                <img src="https://s.libertaddigital.com/2022/01/23/300/300/abrigo-invierno.jpg" alt="" id="producto-imagen">
-                <div>
-                    <p id="producto-nombre">Camisa abrigadora</p>
-                    <h1 id="producto-precio">500k COP</h1>
-                    <p id="producto-descuento"> Impresionante descuento</p>
-                </div>
+        <div class="contenedor-compra">
+            <div class="organizador-compra">
+                    <img id="imagen-producto" src="" alt="">
+                    <div class="texto-compra">
+                        <p id="nombre-producto"></p>
+                        <h1 id="precio-producto"></h1>
+                        <p id="descuento-producto"></p>
+                        <h5> En ICY, nos enorgullece proporcionar a nuestros clientes una experiencia de compra segura y protegida. Entendemos la importancia de la seguridad en las transacciones en línea</h3>
+                        <button class="button-compra">COMPRAR</button>
+                    </div>
+                    <h1> ¡QUE BUENA ELECCIÓN!</h1>
             </div>
-            </a>
-            <a href="compra.html" id="link-ropa">
-            <div class="contenedor-ropa" class="imagen-enlace">
-                <img src="https://s.libertaddigital.com/2022/01/23/300/300/abrigo-invierno.jpg" alt="" id="producto-imagen">
-                <div>
-                    <p id="producto-nombre">Camisa abrigadora</p>
-                    <h1 id="producto-precio">200k COP</h1>
-                    <p id="producto-descuento"> Impresionante descuento</p>
-                </div>
-            </div>
-            </a>
-            <a href="compra.html" id="link-ropa">
-            <div class="contenedor-ropa" class="imagen-enlace">
-                <img src="https://s.libertaddigital.com/2022/01/23/300/300/abrigo-invierno.jpg" alt="" id="producto-imagen">
-                <div>
-                    <p id="producto-nombre">Camisa abrigadora</p>
-                    <h1 id="producto-precio">500k COP</h1>
-                    <p id="producto-descuento"> Impresionante descuento</p>
-                </div>
-            </div>
-            </a>
-            <a href="compra.html" id="link-ropa">
-            <div class="contenedor-ropa" class="imagen-enlace">
-                <img src="https://s.libertaddigital.com/2022/01/23/300/300/abrigo-invierno.jpg" alt="" id="producto-imagen">
-                <div>
-                    <p id="producto-nombre">Camisa abrigadora</p>
-                    <h1 id="producto-precio">500k COP</h1>
-                    <p id="producto-descuento"> Impresionante descuento</p>
-                </div>
-            </div>
-            </a>
         </div>
     </section>
     <section id="Descripcion" class="Descripcion">
