@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'GenshinImpact';
-    src: url('/fonts/genshin.ttf') format('truetype');
+    src: url('../fonts/genshin.ttf') format('truetype');
 }
 
 *{
