@@ -15,7 +15,8 @@ html{
 
 body{
     font-family: "GenshinImpact";
-    background-color: #16161d;
+    color: black;
+    background-color: #1C1678;
 }
 
 
@@ -31,7 +32,7 @@ body{
 nav{
     justify-content: center;
     align-items: center;
-    background-color: #16161d;
+    background-color: #1C1678;
     position: fixed;
     top: 0;
     width: 100%;
@@ -71,7 +72,7 @@ nav{
     text-align: center;
 }
 
-.Name-nav{
+.Name-nav h1{
     color: white;
 }
 
@@ -107,7 +108,7 @@ nav{
 
 .contenedor-nav > a:hover{
     transition:all ease-in-out .3s;
-    background-color: #3f3f42;
+    background-color: #7BC9FF;
 }
 
 .Inicio{
@@ -115,15 +116,13 @@ nav{
     flex-direction: row;
     width: 100%;
     height: 100vh;
-    color: white;
-    background: rgb(59,59,140);
-    background: linear-gradient(90deg, rgba(59,59,140,1) 0%, rgba(0,213,255,1) 100%);
+    color: black;
+    background-color: #70cfe7;
     padding: 5%;
     max-width: 100%;
     margin: auto;
     align-items: center;
     justify-content: center;
-
 }
 
 .presentacion{
@@ -144,8 +143,7 @@ nav{
 .Descripcion{
     width: 100%;
     height: 165px;
-    background: rgb(99,38,201);
-    background: linear-gradient(90deg, rgba(99,38,201,1) 15%, rgba(13,13,207,1) 85%);
+    background-color: #5AB2FF;
     padding: 5%;
     max-width: 100%;
 }
@@ -159,8 +157,7 @@ nav{
 .Redes{
     width: 100%;
     height: 165px;
-    background: rgb(99,38,201);
-    background: linear-gradient(90deg, rgba(99,38,201,1) 15%, rgba(13,13,207,1) 85%);
+    background-color: #5AB2FF;
     padding: 5%;
     max-width: 100%;
 }
@@ -173,7 +170,7 @@ nav{
     margin: auto;
     width: 100%;
     gap: 2%;
-    color: white;
+    color: black;
 }
 
 
@@ -188,7 +185,6 @@ p{
     align-items: center;
     justify-content: center;
     box-sizing: border-box;
-    border: 3px solid #16161d;
     border-radius: 15px;
     padding: 2%;
     width: 120px;
@@ -203,7 +199,6 @@ p{
     align-items: center;
     justify-content: center;
     box-sizing: border-box;
-    border: 3px solid #16161d;
     border-radius: 15px;
     padding: 2%;
     width: 120px;
@@ -214,8 +209,7 @@ p{
 }
 
 .Red-enlaces:hover{
-    color: white;
-    background: #16161d;
+    background: #A0DEFF;
     transition: all ease-in-out .4s;
 }
 
@@ -224,7 +218,6 @@ p{
 }
 
 .Red-enlaces{
-    color: black;
     text-decoration: none;
 }
 
@@ -238,8 +231,7 @@ p{
 }
 
 .inicio-divs:hover{
-    color: white;
-    background: #16161d;
+    background: #A0DEFF;
     transition: all ease-in-out .4s;
 }
 
@@ -257,7 +249,7 @@ p{
 }
 
 .divs-decorativos a{
-    color: white;
+    color: black;
 }
 
 .text-inicio{
@@ -284,7 +276,6 @@ p{
     flex-direction: column;
     width: 100%;
     height: 165px;
-    background-color: #3f3f42;
     align-items: center;
     justify-content: center;
 }
@@ -310,8 +301,6 @@ p{
     display: flex;
     flex-direction: column;
     color: aliceblue;
-    background-color: #3f3f42;
-    border: 1px solid white;
     border-radius: 15px;
     width: 80px;
     height: 80px;

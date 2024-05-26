@@ -8,21 +8,12 @@
     <title>ICY</title>
 </head>
 <body>
-    <script>
-    window.onload = function() {
-        var producto = JSON.parse(localStorage.getItem('producto'));
-        document.getElementById('imagen-producto').src = producto.imagen;
-        document.getElementById('nombre-producto').textContent = producto.nombre;
-        document.getElementById('precio-producto').textContent = producto.precio;
-        document.getElementById('descuento-producto').textContent = producto.descuento;
-    };
-    </script>
     <header class="contenedor">
             <nav>
                 <section class="busca-nav">
                     <div class="nav-search">
                         <div class="Name-nav">
-                            <a href="/index.html" class="inicio-a">
+                            <a href="../index.html" class="inicio-a">
                             <h1>ICY</h1>
                             </a>
                         </div>
@@ -34,26 +25,27 @@
                 </section>
                 <section class="div-nav">
                     <div class="contenedor-nav">
-                    <a href="/index.html">Inicio</a>
+                    <a href="../index.html">Inicio</a>
                     <a href="ropa.html">Ropa</a>
-                    <a href="#Muñecos">Muñecos</a>
-                    <a href="#Accesorios">Accesorios</a>
-                    <a href="#Otros">Otros</a>
-                    <a href="#Contacto">Contacto</a>
+                    <a href="Muñecos">Muñecos</a>
+                    <a href="Accesorios">Accesorios</a>
+                    <a href="Contacto">Contacto</a>
                     </div>
                 </section>
             </nav>
     </header>
-    <section class="Inicio" id="Inicio">
+    <section class="Inicio" id="Inicio">    <div class="contenedor-detalle">
+
+    </div>
         <div class="contenedor-compra">
             <div class="organizador-compra">
-                    <img id="imagen-producto" src="" alt="">
+                <img id="detalle-imagen" src="" alt="">
                     <div class="texto-compra">
-                        <p id="nombre-producto"></p>
-                        <h1 id="precio-producto"></h1>
-                        <p id="descuento-producto"></p>
+                        <p id="detalle-nombre"></h1>
+                        <h1 id="detalle-precio"></h2>
+                        <p id="detalle-descuento"></p>
                         <h5> En ICY, nos enorgullece proporcionar a nuestros clientes una experiencia de compra segura y protegida. Entendemos la importancia de la seguridad en las transacciones en línea</h3>
-                        <button class="button-compra">COMPRAR</button>
+                        <button class="button-compra" onclick="comprado()">COMPRAR</button>
                     </div>
                     <h1> ¡QUE BUENA ELECCIÓN!</h1>
             </div>
@@ -125,7 +117,38 @@
             </div>
         </section>
     </footer>
-    <script src="/js/main.js"></script>
+    <script src="../js/main.js"></script>
     <script src="https://kit.fontawesome.com/0191115c2b.js" crossorigin="anonymous"></script>
+    <script>
+        window.onload = function() {
+            var producto = JSON.parse(localStorage.getItem('producto'));
+            if (producto) {
+                document.getElementById('detalle-imagen').src = producto.imagen;
+                document.getElementById('detalle-nombre').textContent = producto.nombre;
+                document.getElementById('detalle-precio').textContent = producto.precio;
+                document.getElementById('detalle-descuento').textContent = producto.descuento;
+            }
+        };
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script>
+    const Toast = Swal.mixin({
+        toast: true,
+        position: "top-end",
+        showConfirmButton: false,
+        timer: 3000,
+        timerProgressBar: true,
+        didOpen: (toast) => {
+          toast.onmouseenter = Swal.stopTimer;
+          toast.onmouseleave = Swal.resumeTimer;
+        }
+      });
+        function comprado(){
+    Toast.fire({
+        icon: "success",
+        title: "Compra realizada"
+      });
+}
+    </script>
 </body>
 </html>
